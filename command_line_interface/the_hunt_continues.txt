@@ -1,0 +1,53 @@
+-- [Lab] The Hunt Continues
+-- Opens: Friday, 14 October 2022, 12:00 AM
+
+-- This lab is a continuation of Hunting Commands.
+
+-- Write down all commands you've found. You may be asked to share your
+
+-- solutions during the lab. Try out all the commands you find!
+
+--     Find a keyboard shortcut to search through the commands you've used previously.
+--     Find a command to exit your terminal and a keyboard shortcut that does the same.
+--     Find a command to get the current date & time.
+--     Find a command that displays the location or path of a command. In other words, it --     displays where the command is located on your computer.
+--     Find a command that can display a sequence of arbitrarily chosen numbers.
+
+
+-- Stretch
+
+--     Find a command to copy text from any source to the clipboard.
+--     Find a command to paste text from the clipboard.
+--     Find a command to replace text with other text.
+
+
+
+
+
+1.  Find a keyboard shortcut to search through the commands you've used previously.
+    - press up on the direction pad.
+
+2.  Find a command to exit your terminal and a keyboard shortcut that does the same.
+    $ exit
+    - ctrl + shft + w
+
+3.  Find a command to get the current date & time.
+    $ date
+    or
+    $ timedatectl
+
+4.  Find a command that displays the location or path of a command. In other words, it displays where the command is located on your computer.
+    $ type NAME_OF_COMMAND
+      - i.e. $ type date
+
+5.  Find a command that can display a sequence of arbitrarily chosen numbers.
+    - I don't know if this is what the question is asking.
+    $ shuf -i MIN-MAX -n TIMES
+      - i.e. $ shuf -i 0-100000 -n 5
+
+Stretch
+
+1.  Find a command to copy text from any source to the clipboard.
+    
+2.  Find a command to paste text from the clipboard.
+3.  Find a command to replace text with other text.
