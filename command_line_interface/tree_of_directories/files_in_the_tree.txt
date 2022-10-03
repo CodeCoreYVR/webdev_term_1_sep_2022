@@ -1,0 +1,34 @@
+-- [Lab] Files In The Tree
+-- Opens: Friday, 14 October 2022, 12:00 AM
+
+-- This lab uses the directories created in A Tree of Directories.
+
+-- Using nano create 3 files containing at least 3 lines of text. Name them:
+
+--     memoir.txt
+--     agenda.txt
+--     calendar.txt
+$ nano memoir.txt
+  - type three lines
+  - press ctrl+x
+  - press ctrl+y
+  - press enter
+
+-- Using cat and a redirection operator (i.e. > or >>), create another file from the contents of the 3 files created in the previous step, named: compilation.txt. It should contain all of the text inside of memoir.txt, agenda.txt and calendar.txt.
+$ cat memoir.txt agenda.txt calendar.txt > compilation.txt
+
+-- Using mv, move memoir.txt inside the gertrude_styles directory. Then, move
+$ mv memoir.txt ./gertrude_styles
+
+-- agenda.txt inside the lola_tul directory. Then, move calendar.txt to the emma_styles_grim directory.
+$ mv agenda.txt ./gertrude_styles/bianca_grave/lola_tul
+$ mv calendar.txt ./gertrude_styles/jim_styles/bob_styles/karen_styles_grim/emma_styles_grim
+
+-- Using cp, copy memoir.txt from gertrude_styles to the herve_tul directory. Again using cp, copy the herve_tul directory to bob_styles renaming it to herve_styles.
+$ cp ./gertrude_styles/memoir.txt ./gertrude_styles/bianca_grave/lola_tul/herve_tul
+$ cp -r ./gertrude_styles/bianca_grave/lola_tul/herve_tul ./gertrude_styles/jim_styles/bob_styles/herve_styles
+
+
+
+
+
