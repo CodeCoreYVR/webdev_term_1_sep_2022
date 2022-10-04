@@ -1,0 +1,25 @@
+Steps:
+
+1.  $ cd ..
+    - This step is only needed if you're currently in math_scripts repo.
+    - When you do "$ ls" it should show math_scripts as one of the sub directories.
+    $ rm -rf math_scripts
+2.  - Slack https://github.com/YOUR_GITHUB_ACCOUNT_NAME/math_scripts to the group.
+3.  - Click on partners slack link.
+    - Click on "commits" located at the top right of project.
+    - Look through commits.
+4.  $ git clone https://github.com/YOUR_PARTNERS_GITHUB_ACCOUNT_NAME/math_scripts.git
+5.  - At the top of "your" math_scripts repo click on "settings"(NOT settings for your profile)
+    - On the left click on collaborators.
+    - Add YOUR_PARTNERS_GITHUB_ACCOUNT_NAME as collaborator
+    - On your github profile click on the notification bell at the top right.
+    - Accept collaboration invitation from partner.
+6.  $ cd math_scripts
+7.  $ code multiply.js
+    - Add scrupt to print the product of two numbers.
+8.  $ git add multiply.js
+    $ git commit -m "created multiply.js and added the script"
+9.  $ git push origin main
+    - On your browser got back to github.com/YOUR_PARTNERS_GITHUB_ACCOUNT_NAME/math_scripts
+    - Look at commit history.
+    - Is your commit there?
