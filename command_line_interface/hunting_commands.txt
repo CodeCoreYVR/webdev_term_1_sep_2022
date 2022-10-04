@@ -1,0 +1,67 @@
+-- [Lab] - Hunting Commands
+
+-- This lab is a hunt for a variety of shell commands. To solve these, use the developer's most powerful tool: Google.
+
+-- Write down all commands you've found. You may be asked to share your solutions during the lab. Try out all the commands you find!
+
+--     Find a command to list the commands that you have used recently.
+--     Find a command to delete a file. Try it on a file that you've created with touch.
+--     Find out how to delete a directory with the command you found in 2.
+--     Find a command to search for files and/or directories by their names.
+--     Find a command to list all active running programs (i.e. processes) like your OS' Activity Monitor.
+--     Find a command to download files from the Internet
+--     Find a command to logout of the shell session
+--     Find a command to exit the shell
+
+-- Stretch:
+
+--     Find a command to print environment variables
+--     Find a command to create aliases
+
+
+
+
+1.  Find a command to list the commands that you have used recently.
+    $ history
+    or
+    $ history n
+
+2.  Find a command to delete a file. Try it on a file that you've created with touch.
+    $ rm FILE_NAME.txt
+
+3.  Find out how to delete a directory with the command you found in 2.
+    $ rmdir [DIR_NAME]
+    or
+    $ rmdir -r [DIR_NAME]
+
+4.  Find a command to search for files and/or directories by their names.
+    $ sudo find / -name [DIR_NAME] -type d
+
+5.  Find a command to list all active running programs (i.e. processes) like your OS' Activity Monitor.
+    $ ps aux
+    or
+    $ top
+    or
+    $ htop
+
+6.  Find a command to download files from the Internet
+    $ curl https://WEBSITE_TO_DOWNLOAD_FROM.com/FILE_NAME.txt -o /PATH/TO/DOWNLOAD/TO/FILE_NAME.txt
+      - curl supports uploading data, and more protocols than FTP and HTTP.
+    or
+    $ wget https://WEBSITE_TO_DOWNLOAD_FROM.com/FILE_NAME.txt -O /PATH/TO/DOWNLOAD/TO/FILE_NAME.txt
+      - -O /PATH/T.... is added if you want it to be downloaded to a specific file.
+      - wget is more straight forward and can download recursively.
+
+7.  Find a command to logout of the shell session
+    $ logout
+8.  Find a command to exit the shell
+    $ exit
+
+Stretch:
+
+1.  Find a command to print environment variables
+    $ printenv
+
+2.  Find a command to create aliases
+    $ alias name_for_new_shortcut="script you want shortcut for"
+      - i.e. $ alias c="cd .."
