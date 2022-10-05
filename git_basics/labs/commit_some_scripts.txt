@@ -1,0 +1,33 @@
+Steps:
+
+1.  $ mkdir math_scripts
+2.  $ cd math_scripts
+    $ git init
+3.  $ code .gitignore
+    - Go to https://www.gitignore.io/ 
+    - Add linux, macos, windows, ruby, node.
+4.  $ git add .gitignore
+    $ git add -m "initialized project with gitignore"
+5.  $ code add.js
+    - add script to print the some of two numbers.
+6.  $ git add .
+    $ git commit -m "created add.js and added script"
+7.  $ code subtract.js
+    - add scrupt to print the remainder of two numbers.
+8.  $ git add subtract.js
+    $ git commit -m "created subtract.js and added the script"
+9.  - Go to your github profile and click on new repo.
+    - Give it the same name as the repo on our computer math_scripts.
+    $ git branch -M main
+    $ git remote add origin https://github.com/YOUR_GITHUB_ACCOUNT_NAME/math_scripts.git
+    $ git push -u origin main
+11. $ code teammates.txt
+    - add your teammates names to teammates.txt
+    $ git add teammates.txt
+    $ git commit -m "created teammates.txt and added content"
+10. slack https://github.com/YOUR_GITHUB_ACCOUNT_NAME/math_scripts to your instructor.
+
+
+
+
+
