@@ -7,5 +7,75 @@
 </head>
 <body>
 
+  <form action="">
+
+    <!-- Radio Option Example -->
+
+    <fieldset>
+      <legend>Do you like pineapple pizza?</legend>
+        <input type="radio" id="yes" name="pineapple-pizza-answer" required>
+          <label for="yes">YES!</label>
+        <input type="radio" id="no" name="pineapple-pizza-answer">
+          <label for="no">no...</label>
+        <input type="radio" id="idk" name="pineapple-pizza-answer">
+          <label for="no">I don't know</label>
+    </fieldset>
+
+    <br><br>
+
+    <!-- Checkbox Option Example -->
+
+    <fieldset>
+      <legend>What pizza toppings do you like?</legend>
+      <input type="checkbox" id="pineapple" name="pizza-topping">
+      <label for="pineapple">Pineapple</label>
+      <input type="checkbox" id="pepperoni" name="pizza-topping">
+      <label for="pepperoni">Pepperoni</label>
+      <input type="checkbox" id="steak" name="pizza-topping">
+      <label for="steak">Steak Slices</label>
+    </fieldset>
+
+    <br><br>
+
+    <!-- Select Option Example -->
+
+    <label for="country">Where are you from?</label>
+      <select name="country" id="country" required>
+        <option value="" disabled selected>---</option>
+        <option value="france">France</option>
+        <option value="uk">United Kingdom</option>
+        <option value="japan">Japan</option>
+        <option value="canada">Canada</option>
+        <option value="india">India</option>
+        <option value="iran">Iran</option>
+      </select>
+    <br>
+    <input type="submit">
+
+    <br><br>
+
+    <!-- Social Media Form Example -->
+
+    <label for="firstName">First Name</label>
+      <input id="firstName" name="firstName" type="text" placeholder="Please type your name" required="false">
+      <br>
+    <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Please type your surname" required>
+      <br>
+    <label for="birthday">Birthday</label>
+      <input type="date" id="birthday" name="birthday" placeholder="Please enter your birthday" required>
+      <br>
+    <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Please type a password" required>
+      <br>
+    <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Please enter your email" required>
+      <br>
+    <label for="bio">Bio</label><br>
+      <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Please type a few lines to describe yourself :)"></textarea>
+      <br>
+    <input type="submit" value="Sign Up!">
+    </form>
+
 </body>
 </html>
