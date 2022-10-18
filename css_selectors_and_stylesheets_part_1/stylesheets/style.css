@@ -1,0 +1,151 @@
+/* CSS for Stripey Text Exercise */
+
+h1, h3, h5 {
+  color: green;
+}
+
+h2, h4, h6 {
+  color: yellow;
+}
+
+/* ID Selector Example */
+
+#p-tag {
+  color: red;
+}
+
+#p-tag {
+  color: blue;
+  /* this #p-tag will override the one above because code is read line ny line */
+}
+
+/* Class Selector Example */
+
+.background-pink {
+  background-color: pink;
+}
+
+
+/* CSS for desendant exercise */
+
+.rainbow-text h1 {
+  color: red;
+}
+
+.rainbow-text h2 {
+  color: orange;
+}
+
+.rainbow-text h3 {
+  color: yellow;
+}
+
+.rainbow-text h4 {
+  color: green;
+}
+
+.rainbow-text h5 {
+  color: blue;
+}
+
+.rainbow-text h6 {
+  color: indigo;
+}
+
+.rainbow-text p {
+  color: purple;
+}
+
+.stripey-text h1, h3, h5 {
+  color: yellow;
+}
+
+.stripey-text h2, h4, h6 {
+  color: green;
+}
+
+/* CSS for colourful table exercise */
+
+#label1 {
+  background-color: red;
+}
+
+#label2 {
+  background-color: orange;
+}
+
+#label3 {
+  background-color: yellow;
+}
+
+#label4 {
+  background-color: green;
+}
+
+#label5 {
+  background-color: blue;
+}
+
+#label6 {
+  background-color: indigo;
+}
+
+#label7 {
+  background-color: purple;
+}
+
+label {
+  color: gold;
+}
+
+#grey-label {
+  color: grey;
+}
+
+.aqua-label {
+  color: aqua;
+}
+
+/* CSS for Rainbow Text Exercise */
+/* This is commented our to previous overwriting CSS style from above */
+
+/* body {
+  background-color: pink;
+} */
+
+/* h1 {
+  color: red;
+}
+
+h2 {
+  color: orange;
+}
+
+h3 {
+  color: yellow;
+}
+
+h4 {
+  color: green;
+}
+
+h5 {
+  color: blue;
+}
+
+h6 {
+  color: indigo;
+}
+
+p {
+  color: purple;
+} */
+
+
+
+/* CSS syntax note */
+
+/* tag {
+  property (colon) (space) value (semi-colon)
+  property: value;
+} */
