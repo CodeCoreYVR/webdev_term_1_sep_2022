@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Sheet</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+      }
+      .info-container {
+        width: fit-content;
+        font-weight: bold;
+        border: 1px solid black;
+        padding-left: 6px;
+      }
+      h2 {
+        margin-bottom: 0%;
+      }
+      input[type=text] {
+        width: 193px;
+        margin-top: 2px;
+        margin-right: 2px;
+        margin-bottom: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1><u>Mark Sheet</u></h1>
+      <form>
+        <div class="info-container">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="DOB">DOB:</label>
+            <input type="date" id="DOB" name="DOB">
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" name="grade">
+            <label for="schoolName">School:</label>
+            <input type="text" id="schoolName" name="schoolName">
+        </div>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Student#</th>
+                <th>Subject Name</th>
+                <th>Marks Obtained</th>
+                <th>Maximum Marks</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="number" id="studentNum1" name="studentNum1"></td>
+                <td>
+                  <select name="subject1" id="subject1">
+                    <option value="maths">Maths</option>
+                    <option value="science">Science</option>
+                    <option value="socialStudies">Social Studies</option>
+                    <option value="music">Music</option>
+                    <option value="english">English</option>
+                    <option value="french">French</option>
+                    <option value="computerScience">Computer Science</option>
+                  </select>
+                </td>
+                <td><input type="number" id="marksObtained1" name="marksObtained1"></td>
+                <td><input type="number" id="maximumMarks1" name="maximumMarks1"></td>
+                <td><input type="text" id="grade1" name="grade1"></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="studentNum2" name="studentNum2"></td>
+                <td>
+                  <select name="subject2" id="subject2">
+                    <option value="maths">Maths</option>
+                    <option value="science">Science</option>
+                    <option value="socialStudies">Social Studies</option>
+                    <option value="music">Music</option>
+                    <option value="english">English</option>
+                    <option value="french">French</option>
+                    <option value="computerScience">Computer Science</option>
+                  </select>
+                </td>
+                <td><input type="number" id="marksObtained2" name="marksObtained2"></td>
+                <td><input type="number" id="maximumMarks2" name="maximumMarks2"></td>
+                <td><input type="text" id="grade2" name="grade2"></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="studentNum3" name="studentNum3"></td>
+                <td>
+                  <select name="subject3" id="subject3">
+                    <option value="maths">Maths</option>
+                    <option value="science">Science</option>
+                    <option value="socialStudies">Social Studies</option>
+                    <option value="music">Music</option>
+                    <option value="english">English</option>
+                    <option value="french">French</option>
+                    <option value="computerScience">Computer Science</option>
+                  </select>
+                </td>
+                <td><input type="number" id="marksObtained3" name="marksObtained3"></td>
+                <td><input type="number" id="maximumMarks3" name="maximumMarks3"></td>
+                <td><input type="text" id="grade3" name="grade3"></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="studentNum4" name="studentNum4"></td>
+                <td>
+                  <select name="subject4" id="subject4">
+                    <option value="maths">Maths</option>
+                    <option value="science">Science</option>
+                    <option value="socialStudies">Social Studies</option>
+                    <option value="music">Music</option>
+                    <option value="english">English</option>
+                    <option value="french">French</option>
+                    <option value="computerScience">Computer Science</option>
+                  </select>
+                </td>
+                <td><input type="number" id="marksObtained4" name="marksObtained4"></td>
+                <td><input type="number" id="maximumMarks4" name="maximumMarks4"></td>
+                <td><input type="text" id="grade4" name="grade4"></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="studentNum5" name="studentNum5"></td>
+                <td>
+                  <select name="subject5" id="subject5">
+                    <option value="maths">Maths</option>
+                    <option value="science">Science</option>
+                    <option value="socialStudies">Social Studies</option>
+                    <option value="music">Music</option>
+                    <option value="english">English</option>
+                    <option value="french">French</option>
+                    <option value="computerScience">Computer Science</option>
+                  </select>
+                </td>
+                <td><input type="number" id="marksObtained5" name="marksObtained5"></td>
+                <td><input type="number" id="maximumMarks5" name="maximumMarks5"></td>
+                <td><input type="text" id="grade5" name="grade5"></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="studentNum6" name="studentNum6"></td>
+                <td>
+                  <select name="subject6" id="subject6">
+                    <option value="maths">Maths</option>
+                    <option value="science">Science</option>
+                    <option value="socialStudies">Social Studies</option>
+                    <option value="music">Music</option>
+                    <option value="english">English</option>
+                    <option value="french">French</option>
+                    <option value="computerScience">Computer Science</option>
+                  </select>
+                </td>
+                <td><input type="number" id="marksObtained6" name="marksObtained6"></td>
+                <td><input type="number" id="maximumMarks6" name="maximumMarks6"></td>
+                <td><input type="text" id="grade6" name="grade6"></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="studentNum7" name="studentNum7"></td>
+                <td>
+                  <select name="subject7" id="subject7">
+                    <option value="maths">Maths</option>
+                    <option value="science">Science</option>
+                    <option value="socialStudies">Social Studies</option>
+                    <option value="music">Music</option>
+                    <option value="english">English</option>
+                    <option value="french">French</option>
+                    <option value="computerScience">Computer Science</option>
+                  </select>
+                </td>
+                <td><input type="number" id="marksObtained7" name="marksObtained7"></td>
+                <td><input type="number" id="maximumMarks7" name="maximumMarks7"></td>
+                <td><input type="text" id="grade7" name="grade7"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td><input type="number" id="studentNum" name="studentNum"></td>
+                <td><strong>Total:</strong></td>
+                <td><input type="number" id="totalMarks" name="totalMarks"></td>
+                <td><input type="number" id="maximumMark" name="maximumMarks"></td>
+                <td><input type="text" id="finalGrade" name="finalGrade"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div>
+          <h2>Remarks</h2>
+          <textarea name="remarks" id="remarks" cols="78" rows="10"></textarea>
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>

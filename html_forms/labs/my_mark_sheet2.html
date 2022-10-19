@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Sheet</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+      }
+      #info-container {
+        width: 363px;
+      }
+      .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+      }
+      h2 {
+        margin-bottom: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1><u>Mark Sheet</u></h1>
+      <form>
+        <div id="info-container">
+          <div class="info">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div class="info">
+            <label for="DOB">DOB:</label>
+            <input type="text" id="DOB" name="DOB">
+          </div>
+          <div class="info">
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" name="grade">
+          </div>
+          <div class="info">
+            <label for="schoolName">School Name:</label>
+            <input type="text" id="schoolName" name="schoolName">
+          </div>
+        </div>
+        <br>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Student#</th>
+                <th>Subject Name</th>
+                <th>Marks Obtained</th>
+                <th>Maximum Marks</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12345</td>
+                <td>math</td>
+                <td>70</td>
+                <td>80</td>
+                <td><strong>A-</strong></td>
+              </tr>
+              <tr>
+                <td>12345</td>
+                <td>Science</td>
+                <td>70</td>
+                <td>80</td>
+                <td><strong>A-</strong></td>
+              </tr>
+              <tr>
+                <td>12345</td>
+                <td>Social Studies</td>
+                <td>70</td>
+                <td>80</td>
+                <td><strong>A-</strong></td>
+              </tr>
+              <tr>
+                <td>12345</td>
+                <td>Music</td>
+                <td>70</td>
+                <td>80</td>
+                <td><strong>A-</strong></td>
+              </tr>
+              <tr>
+                <td>12345</td>
+                <td>English</td>
+                <td>70</td>
+                <td>80</td>
+                <td><strong>A-</strong></td>
+              </tr>
+              <tr>
+                <td>12345</td>
+                <td>French</td>
+                <td>70</td>
+                <td>80</td>
+                <td><strong>A-</strong></td>
+              </tr>
+              <tr>
+                <td>12345</td>
+                <td>Computer Science</td>
+                <td>70</td>
+                <td>80</td>
+                <td><strong>A-</strong></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td><strong>12345</strong></td>
+                <td><strong>Total:</strong></td>
+                <td><strong>490</strong></td>
+                <td><strong>560</strong></td>
+                <td><strong>A-</strong></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div>
+          <h2>Remarks</h2>
+          <textarea name="remarks" id="remarks" cols="78" rows="10"></textarea>
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
