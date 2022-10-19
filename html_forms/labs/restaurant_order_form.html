@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet/reset.css">
+    <title>Restaurant</title>
+    <style>
+      body {
+        background: url(./images/pizza.png);
+        background-size: 115%;
+        background-position: center;
+      }
+      .container-outer {
+        text-align: center;
+        font-size: 5em;
+        font-family:cursive;
+        margin-top: 40px;
+      }
+
+      .container-order {
+        margin-top: 40px;
+        margin-bottom: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 5px;
+        width: fit-content;
+        height: fit-content;
+        background-color: lightcoral;
+      }
+      .container-items {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: lightblue;
+      }
+      dl {
+        display: inline;
+        border: 1px solid black;
+        border-radius: 2px;
+      }
+      dl:not(:first-child) {
+        margin-left: 3px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container-outer">
+    <h1><strong>Tony's Pizza</strong></h1>
+    </div>
+    <div class="container-order">
+      <h2><u><strong>Order</strong></u></h2>
+      <form action="/order/new">
+        <div class="container-items">
+          <dt><strong>Pizza Size:</strong>
+            <br>
+            <dl>
+              <input type="radio" id="xl" name="size" value="xl">
+              <label for="xl">XLarge</label>
+            </dl>
+            <dl>
+              <input type="radio" id="l" name="size" value="l">
+              <label for="l">Large</label>
+            </dl>
+            <dl>
+              <input type="radio" id="m" name="size" value="m">
+              <label for="m">Medium</label>
+            </dl>
+            <dl>
+              <input type="radio" id="small" name="size" value="small">
+              <label for="small">Small</label>
+            </dl>
+          </dt>
+        </div>
+        <div class="container-items">
+          <dt><strong>Sauce:</strong>
+            <br>
+            <dl>
+              <input type="radio" id="tomato" name="sauce" value="tomato">
+              <label for="tomato">Tomato</label>
+            </dl>
+            <dl>
+              <input type="radio" id="merinara" name="sauce" value="merinara">
+              <label for="merinara">Marinara</label>
+            </dl>
+            <dl>
+              <input type="radio" id="pesto" name="sauce" value="pesto">
+              <label for="pesto">Pesto</label>
+            </dl>
+            <dl>
+              <input type="radio" id="bbq" name="sauce" value="bbq">
+              <label for="bbq">BBQ</label>
+            </dl>
+          </dt>
+        </div>
+        <div class="container-items">
+          <dt><strong>Meat:</strong>
+            <br>
+            <dl>
+              <input type="radio" id="beef" name="beef" value="beef">
+              <label for="beef">Beef</label>
+            </dl>
+            <dl>
+              <input type="radio" id="chicken" name="chicken" value="chicken">
+              <label for="chicken">Chicken</label>
+            </dl>
+            <dl>
+              <input type="radio" id="ham" name="ham" value="ham">
+              <label for="ham">Ham</label>
+            </dl>
+            <dl>
+              <input type="radio" id="pepperoni" name="pepperoni" value="pepperoni">
+              <label for="pepperoni">Pepperoni</label>
+            </dl>
+          </dt>
+        </div>
+        <div class="container-items">
+          <dt><strong>Toppings:</strong>
+            <br>
+            <dl>
+              <input type="radio" id="mushrooms" name="mushrooms" value="mushrooms">
+              <label for="mushrooms">Mushrooms</label>
+            </dl>
+            <dl>
+              <input type="radio" id="pineapple" name="pineapple" value="pineapple">
+              <label for="pineapple">Pineapple</label>
+            </dl>
+            <dl>
+              <input type="radio" id="olives" name="olives" value="olives">
+              <label for="olives">Olives</label>
+            </dl>
+            <dl>
+              <input type="radio" id="onions" name="onions" value="onions">
+              <label for="onions">Onions</label>
+            </dl>
+            <dl>
+              <input type="radio" id="tomatoes" name="tomatoes" value="tomatoes">
+              <label for="tomatoes">Tomatoes</label>
+            </dl>
+            <dl>
+              <input type="radio" id="banana_peppers" name="banana_peppers" value="banana_peppers">
+              <label for="banana_peppers">Banana Peppers</label>
+            </dl>
+            <dl>
+              <input type="radio" id="xcheese" name="xcheese" value="xcheese">
+              <label for="xcheese">XCheese</label>
+            </dl>
+            <dl>
+              <input type="radio" id="spinach" name="spinach" value="spinach">
+              <label for="spinach">Spinach</label>
+            </dl>
+          </dt>
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+    </div>     
+  </body>
+</html>
