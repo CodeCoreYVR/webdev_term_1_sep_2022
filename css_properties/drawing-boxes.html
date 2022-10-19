@@ -1,0 +1,64 @@
+<!-- Note: internal css used for this example -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- no style.css link in head because using internal css -->
+  <style>
+    .square {
+      background-color: blue;
+      width: 100px;
+      height: 100px;
+    }
+
+    .long-h-rec {
+      background-color: blue;
+      width: 200px;
+      height: 100px;
+    }
+
+    .long-v-rec {
+      background-color: blue;
+      width: 100px;
+      height: 200px;
+    }
+
+    .pexel-image-border {
+      width: 600px;
+      height: 800px;
+      background: url("./image.jpg");
+      background-size: cover;
+      border-radius: 10px;
+      border-style: solid;
+      border-color: red;
+      /* border: solid green 10px; */
+      margin-bottom: 20px;
+    }
+
+    .pexel-image-shadow {
+      width: 600px;
+      height: 800px;
+      background: url("./image.jpg");
+      background-size: cover;
+      box-shadow: 5px 5px 10px black;
+      /* box-shadow: (pixels-to-right) (pixels-to-bottom) (fade) (colour); */
+      margin-bottom: 20px;
+    }
+
+  </style>
+
+  <meta charset="UTF-8">
+  <title>Drawing Boxes</title>
+</head>
+<body>
+
+  <div class="square"></div>
+  <br>
+  <div class="long-h-rec"></div>
+  <br>
+  <div class="long-v-rec"></div>
+  <br>
+  <div class="pexel-image-border"></div>
+  <div class="pexel-image-shadow"></div>
+</body>
+</html>

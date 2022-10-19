@@ -1,0 +1,23 @@
+@import url('reset.css');
+@import url('styling_importance_demo.css');
+@import url('rbg_exercise.css');
+
+.google-font {
+  font-family: 'Roboto', sans-serif;
+  color: gold;
+  text-align: justify;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.pretty-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.width-height-demo {
+  height: 100px;
+  width: 200px;
+}
