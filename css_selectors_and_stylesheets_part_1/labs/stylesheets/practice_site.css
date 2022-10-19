@@ -1,0 +1,27 @@
+@import url('reset.css');
+
+.container {
+  padding: 25px;
+  background-color: bisque;
+}
+
+.container div { 
+  /* or  */
+/* .boxes { */
+  width: 400vw;
+  max-width: 400px;
+  height: 199px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 181px;
+  text-align: center;
+  border: 3px solid coral;
+  border-radius: 25px;
+  background-color: yellow;
+}
+.container div:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+
+
