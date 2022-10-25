@@ -1,0 +1,35 @@
+@import url("nav.css");
+
+.contact{
+    text-align:center; padding-top: 1.5cm; color: aqua;
+    font-size: 8mm;
+}
+.p{
+    padding: 2cm;
+}
+ form{   font-weight: 300;
+    font-style: normal;
+    font-size: 8mm;
+    letter-spacing: 0em;
+    line-height: 1.4em;
+     color: orangered;
+     text-align: center;
+ }
+ #Name{
+    font-size: 7mm;
+    height: 8mm;
+ }
+.submit {font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    line-height: 1em;
+    font-size: 14px;}
+.info{
+    text-align: center;
+    color:yellow;
+    padding: 3cm 4px;
+    font-size: 20px;
+    line-height: 1.6em;
+    text-decoration:none;
+    font-weight: bolder;
+}

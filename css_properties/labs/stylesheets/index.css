@@ -1,0 +1,20 @@
+@import url('reset.css');
+
+body {
+  background: url(../images/olive-motorway.jpg);
+  background-size: 100vw 100vh;
+}
+
+#heading {
+  opacity: 50%;
+  background-color: rgb(150,0,0);
+  height: 16.5vh;
+}
+#heading-font {
+  text-align: center;
+  opacity: 100%;
+  font-size: 6vh;
+  color:red;
+  /* margin-top: -105px; */
+  margin-top: -16.5vh;
+}

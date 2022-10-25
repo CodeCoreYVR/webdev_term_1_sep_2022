@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="stylesheets/ayaka_order.css" >
+    <title>Order Page</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Home</a>
+      <a href="ron_menu.html">Menu</a>
+      <a href="hooman_faq.html">FAQ</a>
+      <a href="keerat_contact.html">Contact</a>
+    </header>
+    <h1>Order Here!</h1>
+    <main>
+      <section id="order-form">
+        <form action="order">
+          <!-- Appetizer -->
+          <div class="appetizer container">
+            <div class="small-cont">
+              <input type="checkbox" id="meal1" name="meal1" />
+              <label for="appetizer1">Appetizer1:</label>
+              Qty
+              <input type="number" id="meal1_num" placeholder="1" />
+            </div>
+            <div class="small-cont">
+              <input type="checkbox" id="meal2" name="meal2" />
+              <label for="appetizer2">Appetizer2:</label>
+              Qty
+              <input type="number" id="meal2_num" placeholder="1" />
+            </div>
+            <div class="small-cont">
+              <input type="checkbox" id="meal3" name="meal3" />
+              <label for="appetizer3">Appetizer3:</label>
+              Qty
+              <input type="number" id="meal3_num" placeholder="1" />
+            </div>
+          </div>
+          <!-- Meal -->
+          <div class="meal container">
+            <div class="small-cont">
+              <input type="checkbox" id="meal1" name="meal1" />
+              <label for="meal1">Meal1:</label>
+              Qty
+              <input type="number" id="meal1_num" placeholder="1" />
+            </div>
+            <div class="small-cont">
+              <input type="checkbox" id="meal2" name="meal2" />
+              <label for="meal2">Meal2:</label>
+              Qty
+              <input type="number" id="meal2_num" placeholder="1" />
+            </div>
+            <div class="small-cont">
+              <input type="checkbox" id="meal3" name="meal3" />
+              <label for="meal3">Meal3:</label>
+              Qty
+              <input type="number" id="meal3_num" placeholder="1" />
+            </div>
+          </div>
+          <!-- main -->
+          <div class="main title container">
+            <div class="small-cont">
+              <input type="checkbox" id="main1" name="main1" />
+              <label for="main1">Main1:</label>
+              Qty
+              <input type="number" id="main1_num" placeholder="1" />
+            </div>
+            <div class="small-cont">
+              <input type="checkbox" id="main2" name="main2" />
+              <label for="main2">Main2:</label>
+              Qty
+              <input type="number" id="main2_num" placeholder="1" />
+            </div>
+            <div class="small-cont">
+              <input type="checkbox" id="main3" name="main3" />
+              <label for="main3">Main3:</label>
+              Qty
+              <input type="number" id="main3_num" placeholder="1" />
+            </div>
+          </div>
+          <!-- drink -->
+          <div class="drink title container">
+            <div class="small-cont">
+              <input type="checkbox" id="drink1" name="drink1" />
+              <label for="drink1">Drink1:</label>
+              Qty
+              <input type="number" id="drink1_num" placeholder="1" />
+            </div>
+            <div class="small-cont">
+              <input type="checkbox" id="drink2" name="drink2" />
+              <label for="drink2">Drink2:</label>
+              Qty
+              <input type="number" id="drink2_num" placeholder="1" />
+            </div>
+            <div class="small-cont">
+              <input type="checkbox" id="drink3" name="drink3" />
+              <label for="drink3">Drink3:</label>
+              Qty
+              <input type="number" id="drink3_num" placeholder="1" />
+            </div>
+          </div>
+        </form>
+      </section>
+      <section>
+        <form action="contact" id="contact">
+          <label for="firstName">First Name(middle): </label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="John"
+            required
+          />
+          <label for="lastName">Last Name: </label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Smith"
+            required
+          />
+          <label for="tel">Phone Number: </label>
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            placeholder="000-000-0000"
+            required
+          />
+          <label for="postalCode">Postal Code: </label>
+          <input
+            type="text"
+            id="postalCode"
+            name="postalCode"
+            placeholder="XXX-XXX"
+            required
+          />
+          <label for="street">Street No: </label>
+          <input
+            type="text"
+            id="street"
+            name="street"
+            placeholder="1111 Apple St."
+            required
+          />
+          <label for="city">City: </label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            placeholder="Vancouver"
+            required
+          />
+          <label for="zip">Zip Code: </label>
+          <input
+            type="text"
+            id="zip"
+            name="zip"
+            placeholder="XXX-XXX"
+            required
+          />
+          <label for="note">Note: </label>
+          <textarea
+            name="note"
+            id="note"
+            cols="30"
+            rows="10"
+            placeholder="Please let us know if you have any notes or comments"
+          ></textarea>
+          <input type="submit" value="order" id="submit-btn" required />
+        </form>
+      </section>
+    </main>
+  </body>
+  </html>

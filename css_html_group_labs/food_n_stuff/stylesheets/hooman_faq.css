@@ -1,0 +1,24 @@
+@import url('nav.css');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.div1 {
+    width: 60vw;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background-color: #f2b780bd;
+    border-radius: 20px;
+    font-family: courgette;
+    margin-top: 20px;
+}
+.div1 h3, P {
+    margin:0px 10PX;
+}
+.div1 h3 {
+    font-weight: bold; font-size: 1.2rem;
+}
+h1 {
+    font-family: dancing script;
+}
