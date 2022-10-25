@@ -1,0 +1,63 @@
+@import url("nav.css");
+
+.container-outer {
+  min-width: 1000px;
+}
+
+.container-main {
+  height: 100vh;
+  width: 20%;
+  margin-top: -2.9em;
+  margin-right: 80%;
+  padding: 100px 55px 100px 55px;
+  opacity: 80%;
+  color: white;
+  background-color: black;
+}
+
+.container-main h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 300px;
+}
+
+.container-main h4 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: justify;
+  font-style: italic;
+  font-weight: 100px;
+  color: darkgrey;
+}
+
+.container-main h3 {
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.opt form, button {
+  width: 200px;
+  margin: -14px auto;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+}
+
+form, button {
+  animation: glowing 350ms infinite;
+  font-weight: 400%;
+ }
+ @keyframes glowing {
+0% {
+background-color: blue;
+}
+50% {
+background-color: red;
+}
+100% {
+background-color: orange;
+}
+}
