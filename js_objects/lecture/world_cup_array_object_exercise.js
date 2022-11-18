@@ -4,6 +4,8 @@
 // call countries[i].name for whatever country you predict for 1st, 2nd, 3rd
 // for MVP, call countries[i].players[i] for whoever you want
 
+console.log(senegal)
+
 let netherlands = {
   name: "Netherlands",
   players: ["Jurriën Timber", "Matthijs de Ligt", "Stefan de Vrij", "Cody Gakpo", "Luuk de Jong"]
