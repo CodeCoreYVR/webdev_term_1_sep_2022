@@ -1,0 +1,87 @@
+.nav {
+  display: flex;
+  background-color: rgb(205, 239, 239);
+  position: sticky;
+  top: 10px;
+  z-index: 1;
+}
+
+.logo {
+  max-width: 100px;
+  object-fit: contain;
+  margin: 10px;
+}
+
+.link-wrapper {
+  right: 3em;
+  top: 1.5em;
+  position: absolute;
+}
+
+.nav-link {
+  padding-left: 1em;
+  text-decoration: none;
+  color:black;
+}
+
+.login-btn {
+  margin-left: 1em;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.row {
+  display: flex;
+  position: relative;
+}
+
+.boxes {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  margin: 10px;
+}
+
+.static-box {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  margin: 10px;
+  position: static;
+  top: 100px
+}
+
+.relative-box {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  margin: 1px;
+  position: relative;
+  top: 35px;
+  right: 60px;
+}
+
+.absolute-box {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  margin: 1px;
+  position: absolute;
+  top: 35px;
+  left: 60px;
+}
+
+.fixed-img {
+  height: 250px;
+  position: fixed;
+  top: 100px;
+  left: 300px;
+  z-index: -1;
+}
+
+.z-indexed_box {
+  z-index: -2;
+}

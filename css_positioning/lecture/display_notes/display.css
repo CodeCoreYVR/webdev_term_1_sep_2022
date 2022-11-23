@@ -1,0 +1,29 @@
+.header {
+  padding-top: 100px;
+  font-size: 25px;
+}
+
+#block {
+  color: red;
+  display: block;
+}
+
+.inline {
+  color: orange;
+  display: inline;
+  padding: 25px;
+}
+
+.inline-block {
+  color: blue;
+  display: inline-block;
+  margin: 25px;
+}
+
+.none {
+  color: green;
+}
+
+.none:hover {
+  display: none;
+}
