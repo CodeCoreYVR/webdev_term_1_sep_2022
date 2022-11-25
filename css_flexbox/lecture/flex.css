@@ -1,0 +1,175 @@
+.container {
+  display: flex;
+  border: dotted black 1px;
+  height: 300px;
+}
+
+/* flex-direction css */
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+/* flex-wrap css */
+
+.flex-wrap-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* justify-content css */
+
+.justify-content-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-content-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+/* styling for the items */
+
+.box {
+  height: 100px;
+  width: 100px;
+  margin: 2px;
+}
+
+.item1 {
+  background-color: red;
+}
+
+.item2 {
+  background-color: orange;
+}
+
+.item3 {
+  background-color: yellow;
+}
+
+.item4 {
+  background-color: green;
+}
+
+.item5 {
+  background-color: blue;
+}
+
+.item6 {
+  background-color: purple;
+}
+
+.item7 {
+  background-color: pink;
+}
+
+/* align-items css (including heights for items, and padding for baseline example) */
+
+.height1 {
+  height: 22px;
+}
+
+.height2 {
+  height: 55px;
+}
+
+.height3 {
+  height: 99px;
+}
+
+.height4 {
+  height: 111px;
+}
+
+.height5 {
+  height: 112px;
+}
+
+.height6 {
+  height: 77px;
+}
+
+.height7 {
+  height: 33px;
+}
+
+.align-items-stretch {
+  align-items: stretch;
+}
+
+.align-items-flex-start {
+  align-items: flex-start;
+}
+
+.align-items-flex-end {
+  align-items: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-baseline {
+  align-items: baseline;
+}
+
+.padding1 {
+  padding-top: 20px;
+}
+
+.padding2 {
+  padding-bottom: 50px;
+}
+
+.padding3 {
+  padding-bottom: 40px;
+}
+
+.padding4 {
+  padding-bottom: 70px;
+}
+
+.padding5 {
+  padding-bottom: 20px;
+}
+
+.padding6 {
+  padding-top: 50px;
+}
+
+.padding7 {
+  padding-top: 75px;
+}

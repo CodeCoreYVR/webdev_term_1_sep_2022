@@ -1,0 +1,66 @@
+@import url(flex.css);
+
+.width1 {
+  width: 100px;
+  height: 25px
+}
+
+.width2 {
+  width: 220px;
+  height: 25px
+}
+
+.width3 {
+  width: 280px;
+  height: 25px
+}
+
+.width4 {
+  width: 180px;
+  height: 25px
+}
+
+.width5 {
+  width: 80px;
+  height: 25px
+}
+
+.width6 {
+  width: 120px;
+  height: 25px
+}
+
+.width7 {
+  width: 70px;
+  height: 25px
+}
+
+.align-content-stretch {
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.align-content-flex-start {
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.align-content-flex-end {
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.align-content-center {
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.align-content-space-between {
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.align-content-space-around {
+  flex-wrap: wrap;
+  align-content: space-around;
+}
