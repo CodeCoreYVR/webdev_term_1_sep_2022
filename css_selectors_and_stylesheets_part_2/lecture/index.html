@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selector Part 2</title>
+</head>
+<body>
+  <!-- <h1>Hello World</h1>
+  <h2>Hello World</h2>
+  <h3>Hello World</h3> -->
+
+  <h1 class="selector-header">child selector example (>)</h1>
+
+  <p>I am in only a p tag</p>
+
+  <div>
+    <p>I am in a p tag that's nested inside of a div tag</p>
+  </div>
+
+  <h1 class="selector-header">adjacent sibling selector (+)</h1>
+
+  <h1>I am in a h1 tag</h1>
+  <h2>I am in a h2 tag</h2>
+  <h2>I am in a h2 tag</h2>
+  <h2>I am in a h2 tag</h2>
+  <h2>I am in a h2 tag</h2>
+  <h1>I am in a h1 tag</h1>
+  <h2>I am in a h2 tag</h2>
+  <h2>I am in a h2 tag</h2>
+  <h1>I am in a h1 tag</h1>
+  <h2>I am in a h2 tag</h2>
+  <h2>I am in a h2 tag</h2>
+  <h2>I am in a h2 tag</h2>
+
+  <p class="influencer">I am the influencer</p>
+  <p class="follower">I am the follower directly next to the influencer</p>
+  <p class="follower">I am a follower</p>
+  <p class="follower">I am a follower</p>
+  <p class="influencer">I am the influencer</p>
+  <p class="follower">I am a follower directly next to the influencer</p>
+  <p class="follower">I am a follower</p>
+  <p class="influencer">I am the influencer</p>
+  <p class="follower">I am a follower directly next to the influencer</p>
+  <p class="follower">I am a follower</p>
+  <p class="follower">I am a follower</p>
+  <p class="follower">I am a follower</p>
+
+  <h1 class="selector-header">general sibling selector (~)</h1>
+
+  <div class="container">
+    <p class="general-p">I am in a p tag but I am before the first div</p>
+    <p class="general-p">I am in a p tag but I am before the first div</p>
+    <p class="general-p">I am in a p tag but I am before the first div</p>
+    <div><p class="general-p">I am a div tag with a p tag nested inside</p></div>
+    <p class="general-p">I am only in a p tag</p>
+    <p class="general-p">I am only in a p tag</p>
+    <p class="general-p">I am only in a p tag</p>
+    <p class="general-p">I am only in a p tag</p>
+    <div><p class="general-p">I am a div tag with a p tag nested inside</p></div>
+    <p class="general-p">I am only in a p tag</p>
+    <p class="general-p">I am only in a p tag</p>
+    <p class="general-p">I am only in a p tag</p>
+    <p class="general-p">I am only in a p tag</p>
+    <div><p class="general-p">I am a div tag with a p tag nested inside</p></div>
+    <p class="general-p">I am only in a p tag</p>
+    <p class="general-p">I am only in a p tag</p>
+    <p class="general-p">I am only in a p tag</p>
+    <div><p class="general-p">I am a div tag with a p tag nested inside</p></div>
+    <p class="general-p">I am only in a p tag</p>
+
+    <h1 class="selector-header">attribute selector []</h1>
+
+    <a>I am an a tag without href</a><br>
+    <a href="https://www.google.ca/">I am a link to google.ca. I don't have styling applied to me</a><br>
+    <a>I am an a tag without href</a><br>
+    <a title="">I am an a tag with a title tag</a><br>
+    <a title="">I am an a tag with a title tag</a><br>
+    <a>I am an a tag without href</a><br>
+    <a>I am an a tag without href</a><br>
+    <a href="https://css-tricks.com/">I am a link to css-tricks.com. I have styling applied to me</a><br>
+    <a href="">I am an a tag with href</a><br>
+    <a>I am an a tag without href</a><br>
+    <a href="">I am an a tag with href</a><br>
+    <a title="">I am an a tag with a title tag</a><br>
+
+    <h1 class="selector-header">attribute selector [attr|="value"]</h1>
+
+    <p lang="en-us">This line has the lang attr of en-us</p>
+    <p lang="en">This line has the lang attr of en</p>
+    <p lang="en-gb">This line has the lang attr of en-gb</p>
+    <p lang="fr">This line has the lang attr of fr</p>
+    <p lang="es">This line has the lang attr of es</p>
+    <p lang="de">This line has the lang attr of de</p>
+
+    <h1 class="selector-header">attribute selector [attr~="value"]</h1>
+
+    <p title="red pizza">This tag has the value red, pizza</p>
+    <p title="red panda">This tag has the value red, panda</p>
+    <p title="red panda">This tag has the value red, panda</p>
+    <p title="red pizza">This tag has the value red, pizza</p>
+    <p title="red pizza panda">This tag has the value red, pizza, panda</p>
+    <p title="red">This tag has the value red</p>
+    <p title="red pizza">This tag has the value red, pizza</p>
+    <p title="red pizza">This tag has the value red, pizza</p>
+    <p title="red pizza">This tag has the value red, pizza</p>
+
+    <h1 class="selector-header">attribute selector [attr^="value"]</h1>
+
+    <p title="cat">cat</p>
+    <p title="chips">chips</p>
+    <p title="crisps">crisps</p>
+    <p title="chocolate">chocolate</p>
+    <p title="coffee">coffee</p>
+    <p title="colour">colour</p>
+    <p title="coins">coins</p>
+    <p title="codecore">codecore</p>
+
+    <h1 class="selector-header">attribute selector [attr$="value"]</h1>
+
+    <p title="codecore">codecore</p>
+    <p title="are">are</p>
+    <p title="chore">chore</p>
+    <p title="adore">adore</p>
+    <p title="bee">bee</p>
+    <p title="chime">chime</p>
+    <p title="attribute">attribute</p>
+    <p title="merge">merge</p>
+
+    <h1 class="selector-header">attribute selector [attr*="value"]</h1>
+
+    <p date="december 25">december 25</p>
+    <p date="december 24">december 24</p>
+    <p date="october 31">october 31</p>
+    <p date="14 february">14 february</p>
+    <p date="30 december">30 december</p>
+    <p date="1 January">1 January</p>
+    <p date="May 4">May 4</p>
+    <p date="20 April">20 April</p>
+
+    <h1 class="selector-header">:link :visited :hover :active applied on a link</h1>
+
+    <a href="https://css-tricks.com/">This is a link to my website</a>
+
+    <h1 class="selector-header">:focus applied on a form</h1>
+
+    <form action="">
+      <label for="">username</label>
+      <input type="text">
+      <label for="">password</label>
+      <input type="text">
+    </form>
+
+  </div>
+
+    <h1 class="selector-header">:first-child, :last-child, :nth-child(n)</h1>
+
+    <div>
+      <p class="child">I am the first child. I am gold</p>
+      <p class="child">I am the second child. I am silver</p>
+      <p class="child">I am the third child. I am bronze</p>
+      <p class="child">I am the fourth child</p>
+      <p class="child">I am the fifth child</p>
+      <p class="child">I am the last child. I am blue</p>
+    </div>
+
+    <!-- make sure to wrap the children in a parent element -->
+
+  <h1 class="selector-header">::first-line and ::first-lette</h1>
+  <p class="first-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odio aliquam, eum minus molestias odit, consequuntur adipisci placeat sit vel dolores optio sed eaque, Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptates ratione. Commodi ratione, at non dicta fuga expedita. Debitis fugit nisi laboriosam voluptatum quos, reprehenderit laborum? Explicabo ad cupiditate magnam. fugiat nemo iure non deserunt maiores!</p>
+  <p class="first-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odio aliquam, eum minus molestias odit, consequuntur adipisci placeat sit vel dolores optio sed eaque, Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptates ratione. Commodi ratione, at non dicta fuga expedita. Debitis fugit nisi laboriosam voluptatum quos, reprehenderit laborum? Explicabo ad cupiditate magnam. fugiat nemo iure non deserunt maiores!</p>
+  <p class="first-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odio aliquam, eum minus molestias odit, consequuntur adipisci placeat sit vel dolores optio sed eaque, Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptates ratione. Commodi ratione, at non dicta fuga expedita. Debitis fugit nisi laboriosam voluptatum quos, reprehenderit laborum? Explicabo ad cupiditate magnam. fugiat nemo iure non deserunt maiores!</p>
+  <p class="first-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odio aliquam, eum minus molestias odit, consequuntur adipisci placeat sit vel dolores optio sed eaque, Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptates ratione. Commodi ratione, at non dicta fuga expedita. Debitis fugit nisi laboriosam voluptatum quos, reprehenderit laborum? Explicabo ad cupiditate magnam. fugiat nemo iure non deserunt maiores!</p>
+  <p class="first-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odio aliquam, eum minus molestias odit, consequuntur adipisci placeat sit vel dolores optio sed eaque, Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptates ratione. Commodi ratione, at non dicta fuga expedita. Debitis fugit nisi laboriosam voluptatum quos, reprehenderit laborum? Explicabo ad cupiditate magnam. fugiat nemo iure non deserunt maiores!</p>
+
+
+
+</body>
+</html>

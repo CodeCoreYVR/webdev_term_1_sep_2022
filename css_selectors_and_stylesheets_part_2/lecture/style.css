@@ -1,0 +1,154 @@
+
+/* "*" selector's styling is applied to everything unless overwritten */
+
+* {
+  background-color: antiquewhite;
+  text-align: center;
+  color: brown;
+}
+
+.selector-header {
+  color:black
+}
+
+/* child selector example */
+
+body > p {
+  color: purple
+}
+
+/* adjacent siblings selector examples */
+
+h1 + h2 {
+  color: blue;
+}
+
+.influencer + .follower {
+  color:blue
+}
+
+/* general siblings selector example */
+
+div ~ .general-p {
+  color: red
+}
+
+/* attribute selector [] */
+
+a[href] {
+  color: rgb(64, 193, 193)
+}
+
+a[title] {
+  color: pink
+}
+
+a[href="https://css-tricks.com/"] {
+  color: rgb(84, 107, 196)
+}
+
+/* attribute selector [attr|="value"] */
+
+p[lang|="en"] {
+  background-color: blueviolet;
+  color: white
+}
+
+/* p[lang|="e"] {
+  background-color: blueviolet;
+  color: white
+} */
+/* The above styling can't be applied because "e" is not a complete value before a dash - */
+
+/* attribute selector [attr~="value"] */
+/* will select whatever word in the value */
+
+/* p[title~="panda"] {
+  color: white;
+  background-color: black;
+} */
+
+/* p[title~="pizza"] {
+  color: yellow;
+  background-color: red;
+} */
+
+/* p[title~="red"] {
+  color: red;
+  background-color: white;
+} */
+
+/* attribute selector [attr^="value"] */
+/* will select whatever word begins in the value in the attr */
+
+p[title^="codecore"] {
+  color: purple;
+  background-color: white
+}
+
+/* attribute selector [attr$="value"] */
+/* will select whatever word ends in the value in the attr */
+
+p[title$="ee"] {
+  color: rgb(238, 248, 224);
+  background-color: rgb(242, 109, 109)
+}
+
+/* attribute selector [attr*="value"] */
+/* will select whatever part of the word in value in the attr */
+p[date*="dec"] {
+  color: white;
+  background-color: red;
+}
+
+/* :link :visited :hover :active psudeo-classes */
+
+a[href="https://css-tricks.com/"]:link {
+  color: purple
+}
+
+a[href="https://css-tricks.com/"]:visited {
+  color: red
+}
+/* make sure :visited comes before :hover and :active so the styling doesnt overwrite them */
+
+a[href="https://css-tricks.com/"]:hover {
+  color: blue
+}
+
+a[href="https://css-tricks.com/"]:active {
+  color: green
+}
+
+/* :focus example on form */
+input:focus {
+  background-color: aliceblue;
+}
+
+/* :first-child, :last-child, :nth-child(n) */
+.child:first-child {
+  color: gold
+}
+
+.child:last-child {
+  color: blue
+}
+
+.child:nth-child(2) {
+  color: silver
+}
+
+.child:nth-child(3) {
+  color: burlywood
+}
+
+/* ::first-line and ::first-letter */
+.first-example::first-letter {
+  font-weight: bold;
+  color: gold
+}
+
+.first-example::first-line {
+  color:whitesmoke;
+  background-color: black;
+}
