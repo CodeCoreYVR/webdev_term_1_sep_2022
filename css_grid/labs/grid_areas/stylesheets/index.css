@@ -1,0 +1,82 @@
+@import url("./reset.css");
+
+.grid-container {
+  margin: 2px;
+  display: grid;
+  height: 99.5vh;
+  width: 99.7vw;
+  grid-template-areas: 
+    "header header header header"
+    "sidebar slider slider slider"
+    "sidebar main-content main-content adds"
+    "sidebar main-content main-content new-features"
+    "footer footer footer footer";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+}
+
+.grid-container > div {
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5em;
+  text-align: center;
+  border: solid 1px black;
+  padding: 20px 0px 0px 20px;
+}
+
+.header {
+  grid-area: header;
+  background-color: rgb(248, 174, 12);
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color:rgb(189, 183, 120);
+}
+
+.slider {
+  grid-area: slider;
+  background-color: rgb(91, 150, 15);
+}
+
+.main-content {
+  grid-area: main-content;
+  background-color: rgb(248, 174, 154);
+}
+
+.adds {
+  grid-area: adds;
+  background-color: rgb(145, 187, 152);
+}
+
+.new-features {
+  grid-area: new-features;
+  background-color: rgb(147, 130, 132);  
+}
+
+.footer {
+  grid-area: footer;
+  background-color:rgb(248, 181, 12);
+}
+
+@media only screen and (max-width: 800px) { 
+  .grid-container {
+    margin: 2px;
+    display: grid;
+    height: 99.4vh;
+    width: 99.5vw;
+    min-height: 800px;
+    min-width: 700px;
+    grid-template-areas: 
+      "header"
+      "sidebar"
+      "slider"
+      "main-content"
+      "adds"
+      "new-features"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr 2fr 1fr;
+  }
+}
+
