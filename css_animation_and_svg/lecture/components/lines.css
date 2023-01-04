@@ -1,0 +1,76 @@
+.window {
+  fill: rgba(74, 74, 74, 0.3)
+}
+
+.line-animate {
+  color: rgb(86, 8, 110);
+  animation-timing-function: linear;
+  animation-name: draw;
+  animation-fill-mode: forwards;
+}
+
+.line-animate:first-of-type {
+  stroke-dasharray: 23;
+  stroke-dashoffset: 23;
+  animation-duration: 0.46s;
+  animation-delay: 1s;
+}
+
+.line-animate:nth-of-type(2) {
+  stroke-dasharray: 15;
+  stroke-dashoffset: 15;
+  animation-duration: 0.3s;
+  animation-delay: 1.46s;
+}
+
+.line-animate:nth-of-type(3) {
+  stroke-dasharray: 24;
+  stroke-dashoffset: 24;
+  animation-duration: 0.48s;
+  animation-delay: 1.64s;
+}
+
+.line-animate:nth-of-type(4) {
+  stroke-dasharray: 32;
+  stroke-dashoffset: 32;
+  animation-duration: 0.64s;
+  animation-delay: 1.98s;
+}
+
+.line-animate:nth-of-type(5) {
+  stroke-dasharray: 18;
+  stroke-dashoffset: 18;
+  animation-duration: 0.36s;
+  animation-delay: 2.34s;
+}
+
+.line-animate:nth-of-type(6) {
+  color: rgba(52, 42, 71, 0.3);
+  stroke-dasharray: 11;
+  stroke-dashoffset: 11;
+  animation-duration: 0.22s;
+  animation-delay: 0s;
+}
+
+.circle {
+  color:rgb(130, 7, 167);
+  opacity: 1;
+  animation-name: circles;
+  animation-duration: 3s;
+}
+
+@keyframes circles {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
