@@ -1,0 +1,40 @@
+.notification-wrapper {
+background-color: white;
+display: flex;
+align-items: center;
+padding: 2em;
+border-radius: 0.2em;
+box-shadow: 0.2em 0.2em 0.2em rgba(51, 42, 42, 0.2);
+animation-name: shake;
+animation-duration: 2s;
+}
+
+.avatar {
+  margin-right: 1em;
+  border-radius: 50% 50%;
+}
+
+@keyframes shake {
+  /* name needs to be the same as animation-name */
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: rotate(-1.5deg);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: rotate(1.5deg);
+  }
+
+
+
+  /* 50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-2deg);
+  } */
+}

@@ -2,7 +2,7 @@
   border: solid rgb(200, 199, 199) 0.1em;
   padding: 1em 2em;
   border-radius: 0.2em;
-  transition: all 0.2s ease;
+  transition: all 0.2s ease-out;
 }
 
 .button:hover {
