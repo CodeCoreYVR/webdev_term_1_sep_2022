@@ -1,0 +1,29 @@
+.svg {
+  width: 7em;
+}
+
+.line {
+  fill: #933be0;
+}
+
+.home-text {
+  color: #933be0;
+  margin-right: 0.6em;
+}
+
+.svg:hover .line {
+  fill: #933be0c6;
+}
+
+.shadow {
+  fill: #acdcf09e;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: translate3d(-0.3em, -0.3em, 0);
+}
+
+.svg:hover .shadow{
+  transform: translate3d(0,0,0);
+  /* 0,0,0 for shadow to end up in original position */
+  opacity: 1;
+}
