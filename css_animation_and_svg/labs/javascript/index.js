@@ -20,9 +20,20 @@ $(document).ready(function(){
     state < 3 ? state++ : state = 0;
   }, 1100 - 100*clicks)
 
-  // cancel an animation - click button to cancel animation
+  // // cancel an animation - click button to cancel animation
+  // // commented out for next question
+  // $("#square").click(function(event){
+  //   clearInterval(intervalID);
+  // });
+
+  // click a header game - clicking header speeds it up and increases counter. player wins at 10 clicks
   $("#square").click(function(event){
-    clearInterval(intervalID);
+    console.log(clicks);
+    if (clicks < 10) clicks++;
+    else {
+      clearInterval(intervalID);
+      $("#square").text("You Win!");
+    }
   });
 
 });
