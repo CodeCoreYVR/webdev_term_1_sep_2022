@@ -20,4 +20,9 @@ $(document).ready(function(){
     state < 3 ? state++ : state = 0;
   }, 1100 - 100*clicks)
 
+  // cancel an animation - click button to cancel animation
+  $("#square").click(function(event){
+    clearInterval(intervalID);
+  });
+
 });
