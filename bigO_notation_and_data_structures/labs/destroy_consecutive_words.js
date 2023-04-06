@@ -1,26 +1,41 @@
+// Define the input strings for testing the destroyConsecutive function
 let string = "sun moon moon sun",
-  string2 = "apple apple banana pear banana",
-  string3 = "a a a apple banana banana pineapple";
+    string2 = "apple apple banana pear banana",
+    string3 = "a a a apple banana banana pineapple";
 
-const destroyConsecutive = str => {
-  let words = str.split(' '),
-    i = 0;
+// Define a function to remove consecutive words from a string
+const destroyConsecutive = (str) => {
+  // Split the string into an array of words
+	let words = str.split(" "),
+		i = 0;
 
-  while (i < words.length) {
-    words[i] === words[i + 1] ? words.splice(i,2) && (i = 0) : i++;
+
+  // Loop through the array of words
+	while (i < words.length) {
+    // Check if the current word is the same as the next word
+		words[i] === words[i + 1] ? words.splice(i, 2) && (i = 0) : i++;
+    
+    // // Alternative solution:
+    // // Check if the current word is the same as the next word
     // if (words[i] === words[i + 1]) {
-    //   words.splice(i, 2);
-    //   i = 0;
-    // } else {
-    //   i++;
-    // }
-  }
-  return words.join(' ');
-}
+    // // If so, remove both words from the array and reset the index to the beginning
+		//   words.splice(i, 2);
+		//   i = 0;
+		// } else {
+    //   // If not, move on to the next word
+		//   i++;
+		// }
+	}
 
-console.log(destroyConsecutive(string))
-console.log(destroyConsecutive(string2))
-console.log(destroyConsecutive(string3))
+  // Combine the remaining words into a string separated by spaces
+	return words.join(" ");
+};
+
+// Call the destroyConsecutive function with each input string and log the results to the console
+console.log(destroyConsecutive(string));
+console.log(destroyConsecutive(string2));
+console.log(destroyConsecutive(string3));
+
 
 
 
