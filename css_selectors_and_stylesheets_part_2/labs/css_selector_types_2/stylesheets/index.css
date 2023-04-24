@@ -1,0 +1,65 @@
+/* Apply a box-sizing reset to ensure consistent sizing */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Apply styles to the boxes */
+.boxes {
+	color: maroon;
+	background-color: #f2f2f2;
+	padding: 1em;
+	border: 1px solid #ccc;
+	margin-bottom: 1em;
+}
+
+/* Style the header, main content, section, and footer */
+header,
+main,
+section,
+footer {
+	color: white;
+	font-size: 1.3em;
+	font-family: Verdana, sans-serif;
+	border: 1px solid red;
+}
+
+header {
+	background-color: blue;
+}
+
+main {
+	background-color: yellow;
+}
+
+section {
+	background-color: green;
+}
+
+footer {
+	background-color: purple;
+}
+
+/* Add a meaningful class to the header and select it */
+.header {
+	background-color: orange;
+}
+
+/* Select the header element more specifically and change its color back to white without using !important */
+header.header {
+	background-color: white;
+}
+
+/* Repeat for the main, section, and footer */
+.main-content {
+	background-color: #ccc;
+}
+
+.add-section {
+	background-color: #999;
+}
+
+.footer-section {
+	background-color: #666;
+}
