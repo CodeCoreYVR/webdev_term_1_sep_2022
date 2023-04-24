@@ -1,0 +1,47 @@
+/* ************************ EXISTING CSS ************************ */
+/* Note: DO NOT use !important and add your css rules to the top of the existing one */ 
+/* 1. Change the color of first box text by adding a new selector and without touching the existing selectors or reusing them */ 
+/* 2. change the color of first box without touching the existing selectors and the selector that we just added to change its color or reusing them */ 
+/* 3. change the color of first box without touching the existing selectors and the selectors that we just added to change its color or reusing them */ 
+
+/* Default styles */ 
+* { font-size: 1.1em; } 
+
+.container { 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  grid-auto-rows: minmax(100px, max-content); 
+  grid-gap: 1em; 
+} 
+
+.container div { 
+  border: 1px solid #000; 
+} 
+
+.container div { 
+  background-color: whitesmoke; 
+} 
+
+.boxes { 
+  text-align: center; 
+  color: red; 
+} 
+
+.container #box1 { 
+  color: maroon; 
+  font-size: 1.4em; 
+}
+/* ************************ END OF EXISTING CSS ************************ */
+
+/* ***************************** SOLUTION ****************************** */
+/* New selector to change the color of the first box */
+.container div:first-child {
+  background-color: yellow;
+}
+
+/* New class to change color of first box text */
+.first-box {
+  color: blue !important;
+}
+
+
