@@ -1,0 +1,35 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.boxes {
+position: absolute;
+width: 20vw;
+height: 10vh;
+}
+
+#box1 {
+background-color: #1E90FF; /* Darker blue */
+}
+
+#box2 {
+background-color: #FFA500; /* Orange */
+left: 20%;
+}
+
+#box3 {
+background-color: #800000; /* Maroon */
+left: 40%;
+}
+
+#box4 {
+background-color: #008000; /* Green */
+left: 60%;
+}
+
+#box5 {
+background-color: #87CEEB; /* Sky blue */
+left: 80%;
+}
+
