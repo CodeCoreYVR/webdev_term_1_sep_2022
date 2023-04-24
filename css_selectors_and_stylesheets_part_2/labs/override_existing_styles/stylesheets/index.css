@@ -1,0 +1,108 @@
+/* Note add all the styles to the top of existing ones, DO NOT use !important */
+/* 1. Change the background-color of (box1 and box10 to maroon, box6 to brown) without touching existing styles or reusing same selector again or modifying HTML or using inline styles */
+/* 2. change the text color, text size, space between letters, and font weight of all the boxes */
+/* 3. change the background color of box2, box4, and box5 to gray together */
+/* 4. change box6 and box9 background color to maroon, box7 and box8 background-color to black, and box3 background color to white and color to maroon */
+
+/* default styles add your styles above */
+.main-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, max-content);
+}
+
+.main-layout > div {
+  border: 1px solid black;
+}
+
+.boxes {
+  text-align: center;
+}
+
+div#box1.boxes {
+  grid-row: 1 / 3;
+  grid-column: 1 / 5;
+  background-color: grey;
+  z-index: 1;
+}
+
+div#box2.boxes {
+  grid-row: 2 / 6;
+  grid-column: 1;
+  background-color: green;
+  border-top-right-radius: 100px;
+  z-index: 2;
+}
+
+div#box3.boxes {
+  grid-row: 3 / 5;
+  grid-column: 2 / 4;
+  background-color: coral;
+}
+
+div#box4.boxes {
+  grid-row: 2 / 6;
+  grid-column: 4;
+  background-color: green;
+  border-top-left-radius: 100px;
+  z-index: 2;
+}
+
+div#box5.boxes {
+  grid-row: 4 / 6;
+  grid-column: 2 / 4;
+  background-color: lightblue;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+div.main-layout div#box10.boxes {
+  grid-column: 1 / 5;
+  background-color: grey;
+}
+
+.main-layout div#box6.boxes {
+  background-color: white;
+}
+/* End of Default styles */
+
+/* 1.Change the background-color of (box1 and box10 to maroon, box6 to brown) without touching existing styles or reusing the same selector again or modifying HTML or using inline styles */
+div.main-layout div#box1.boxes:nth-child(1),
+div.main-layout div#box10.boxes:nth-child(10) {
+  background-color: maroon;
+}
+
+div.main-layout div#box6.boxes:nth-child(6) {
+  background-color: brown;
+}
+
+/* 2. change the text color, text size, space between letters, and font-weight of all the boxes */
+* {
+  color: blue;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* 3. change the background color of box2, box4, and box5 to gray together */
+div#box2.boxes,
+div#box4.boxes,
+div#box5.boxes {
+  background-color: gray;
+}
+
+/* 4. change box6 and box9 background color to maroon, box7 and box8 background-color to black, and box3 background color to white and color to maroon */
+div.main-layout div#box3.boxes {
+  background-color: white;
+  color: maroon;
+}
+
+div.main-layout div#box6.boxes,
+div.main-layout div#box9.boxes {
+  background-color: maroon;
+}
+
+div.main-layout div#box7.boxes,
+div.main-layout div#box8.boxes {
+  background-color: black;
+}
